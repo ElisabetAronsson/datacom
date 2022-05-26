@@ -88,7 +88,6 @@ public class Client extends Thread{
                     if (temp instanceof User[]) {
                          allPeople = new ArrayList<User>(List.of((User[]) temp));
                          user.setUsers(allPeople);
-                        System.out.println("it arrived!");
                         controller.updateList(allPeople);
                     } else if (temp instanceof Message){
 
